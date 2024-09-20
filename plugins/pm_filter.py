@@ -82,13 +82,13 @@ BUTTONS2 = {}
 #             logger.error(f"Chat Not verified : {e}") 
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
-async def give_filter(client, message):
+async def give_filter_private(client, message):
     k = await manual_filters(client, message)
     if k == False:
         await auto_filter(client, message)
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
-async def give_filter(client, message):
+async def give_filter_group(client, message):
     k = await manual_filters(client, message)
     if k == False:
         await auto_filter(client, message)
