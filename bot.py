@@ -21,7 +21,7 @@ logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 import os
-from pyrogram import Client, version
+from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
 from database.users_chats_db import db
@@ -39,9 +39,11 @@ from lazybot import LazyPrincessBot
 from util.keepalive import ping_server
 from lazybot.clients import initialize_clients
 
+
 PORT = "8080"
 LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
+
 
 async def Lazy_start():
     print('\n')
@@ -67,11 +69,11 @@ async def Lazy_start():
     await app.setup()
     bind_address = "0.0.0.0" if ON_HEROKU else BIND_ADRESS
     await web.TCPSite(app, bind_address, PORT).start()
-    logging.info(f"{me.first_name} with for Pyrogram v{version} (Layer {layer}) started on {me.username}.")
+    logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
     logging.info(LOG_STR)
     await idle()
 
-if name == 'main':
+if __name__ == '__main__':
     try:
         loop.run_until_complete(Lazy_start())
         logging.info('-----------------------🧐 Service running in Lazy Mode 😴-----------------------')
