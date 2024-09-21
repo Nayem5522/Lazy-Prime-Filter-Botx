@@ -44,7 +44,7 @@ LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
 
 # Auto delete function added
-@LazyPrincessBot.on_message(filters.private | filters.group)
+@LazyPrincessBot.on_message(filter.private | filter.group)
 async def auto_delete(client, message):
     await asyncio.sleep(10)  # ১০ সেকেন্ড পর মেসেজ ডিলিট হবে
     await client.delete_messages(chat_id=message.chat.id, message_ids=message.message_id)
