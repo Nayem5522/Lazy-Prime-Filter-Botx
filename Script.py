@@ -66,11 +66,11 @@ Thanks for thinking about us.\nIt seems that you really love <a href=https://t.m
 
     UPLOAD_START = "<b>initiating Lazy Upload ⚡</b>"
 
-    LAZY_UPLOAD_START = """<b>●❤♡ Recieving Lazy File ♡❤●</b>\n\n⏯**File Name:** `{}`"""
+    LAZY_UPLOAD_START = """<b>●❤♡ Recieving Prime File ♡❤●</b>\n\n⏯**File Name:** `{}`"""
 
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "▼ Dᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs.\n▲ Uᴘʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs\n\n★.•☆•.★𑁔𑁔★ 𝖽𝖾𝗍✫𝗂𝗅𝗌 ★𑁔𑁔★.•☆•.★\n\n🔗<b>URL:</b> {}\n\n✩📂<b>F Name:</b> `{}`\n\n✩📝<b>C Name:</b> `{}`\n\n🧬**File Size:** `{}`\n\n🧡Thank you🧡"
 
-    CUSTOM_CAPTION_UL_FILE = " "
+    CUSTOM_CAPTION_UL_FILE = "📂 <i><a href="https://telegram.me/Prime_Movies4U">{file_name}</a></i>\n\nJᴏɪɴ Now ➠ @Prime_Botz 🔥\n\n"
 
     SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Please provide me fast download url 👊"
 
