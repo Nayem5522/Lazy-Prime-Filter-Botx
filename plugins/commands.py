@@ -28,14 +28,14 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+                InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/+OG3sftDEbZ9kMzFl')
             ],
             [
-                InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('😎𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 🤗', url='https://t.me/Prime_Admin_Support_ProBot')
             ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
+            InlineKeyboardButton('✨ 𝗝𝗢𝗜𝗡 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨', url='https://t.me/Prime_Movies4U')
             ],[
-            InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
+            InlineKeyboardButton('✨ 𝗝𝗢𝗜𝗡 𝗕𝗢𝗧`𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨', callback_data="shortlink_info")
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -57,20 +57,20 @@ async def start(client, message):
             InlineKeyboardButton('↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/+OG3sftDEbZ9kMzFl')
             ],[
-            InlineKeyboardButton('🙆🏻 Hᴇʟᴘ ', callback_data='help'),
-            InlineKeyboardButton('🎁 Hᴇʟᴘ++', callback_data='leech_url_help'),
+            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ 2', url='https://t.me/Movies_Request_Group_BD'),
+            InlineKeyboardButton('😎𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 🤗', url='https://t.me/Prime_Admin_Support_ProBot'),
             ],[
-            InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
-            InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⪦𝐁𝐚𝐧𝐠𝐥𝐚 𝐌𝐨𝐯𝐢𝐞𝐬⪧', url='https://t.me/+gEellLjs50ExZGZl'),
+            InlineKeyboardButton('⪦𝐇𝐢𝐧𝐝𝐢 𝐌𝐨𝐯𝐢𝐞𝐬⪧', url='https://t.me/+ZceEtnx2WftjYWU1')
             ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
+            InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz')
             ],[
-            InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
+            InlineKeyboardButton('✨ 𝐏𝐑𝐈𝐌𝐄 𝐌𝐎𝐕𝐈𝐄 ✨', url='https://t.me/Prime_Movies4U')
             ],[
                 InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@LazyDeveloperr'
+                    "💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫", url='https://t.me/Prime_Nayem'
                 )
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -95,7 +95,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "✨ 𝗝𝗢𝗜𝗡 𝗕𝗢𝗧`𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨", url='https://t.me/Prime_Movies4U'
+                    "✨ 𝗝𝗢𝗜𝗡 𝗕𝗢𝗧`𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨", url='https://t.me/Prime_Botz'
                 )
             ]
         ]
@@ -122,7 +122,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/+OG3sftDEbZ9kMzFl')
             ],[
             InlineKeyboardButton('🔍 Gʀᴏᴜᴘ 2', url='https://t.me/Movies_Request_Group_BD'),
-            InlineKeyboardButton('😎𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃🤗 ', url='https://t.me/Prime_Admin_Support_ProBot'),
+            InlineKeyboardButton('😎𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 🤗', url='https://t.me/Prime_Admin_Support_ProBot'),
         ],[
             InlineKeyboardButton('⪦𝐁𝐚𝐧𝐠𝐥𝐚 𝐌𝐨𝐯𝐢𝐞𝐬⪧', url='https://t.me/+gEellLjs50ExZGZl'),
             InlineKeyboardButton('⪦𝐇𝐢𝐧𝐝𝐢 𝐌𝐨𝐯𝐢𝐞𝐬⪧', url='https://t.me/+ZceEtnx2WftjYWU1')
