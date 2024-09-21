@@ -35,7 +35,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✨ 𝗝𝗢𝗜𝗡 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨', url='https://t.me/Prime_Movies4U')
             ],[
-            InlineKeyboardButton('✨ 𝗝𝗢𝗜𝗡 𝗕𝗢𝗧`𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨', callback_data="shortlink_info")
+            InlineKeyboardButton('✨ 𝗝𝗢𝗜𝗡 𝗕𝗢𝗧`𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ✨', url='https://t.me/Prime_Botz')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
