@@ -2,7 +2,7 @@ import logging
 import logging.config
 import os
 import asyncio
-from pyrogram import Client, filters, __version__  # নিশ্চিত করুন যে 'filters' আমদানি করা হয়েছে
+from pyrogram import Client, filters, __version__, idle  # 'filters' এবং 'idle' আমদানি করুন
 from pyrogram.raw.all import layer
 from aiohttp import web
 from lazybot import LazyPrincessBot
@@ -62,7 +62,7 @@ async def Lazy_start():
     await web.TCPSite(app, bind_address, PORT).start()
     logging.info(f"{me.first_name} with Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
     logging.info(LOG_STR)
-    await idle()
+    await idle()  # 'idle' ফাংশনটি ব্যবহার করুন
 
 if __name__ == '__main__':
     try:
