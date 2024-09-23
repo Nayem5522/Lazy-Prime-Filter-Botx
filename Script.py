@@ -214,6 +214,20 @@ By Prime Movies Probitor Bot"""
 ID - <code>{}</code>
 Name - {}
 BY PRIME MOVIES PROVIDER BOT"""
+    RESTART_TXT = """
+<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+
+📅 Dᴀᴛᴇ : <code>{}</code>
+⏰ Tɪᴍᴇ : <code>{}</code>
+🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
+🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v4.2 [ Sᴛᴀʙʟᴇ ]</code>
+
+Bʏ The-Prime-Movies-Probitor-Bot</b>"""
+
+    LOGO = """
+
+𝚃𝙷𝙴 𝙿𝚁𝙸𝙼𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝙿𝚁𝙾𝙱𝙸𝚃𝙾𝚁 𝙱𝙾𝚃𝚣 𝚆𝙾𝚁𝙺𝙸𝙽𝙶"""
+    
     PLANS_TXT = """<b>👋 ʜᴇʏ {},
     
 🎁 <u>ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs</u> :
