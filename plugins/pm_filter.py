@@ -2076,7 +2076,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                        ]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"💞Hello sweetheart ! we have recieved your request for  `{movie}`... \n\nPlease keep some patience, we will upload it as soon as possible. \n❤ Thank u for your Love .❤", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"💞Hello sweetheart ! we have recieved your request for  `{movie}`... \n\nPlease keep some patience, we will upload it as soon as possible.\n\n আপনার রিকুয়েস্ট আমরা গ্রহণ করেছি কিছুক্ষণ পর আবার চেষ্টা করুন দেখবেন ফাইলটি চলে আসবে 👇\n❤ Thank u for your Love .❤", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Recieved 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -2160,7 +2160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("• Ask in correct spelling.\n• Don't ask for movies which are not released on OTT platforms.\n• Possible ask [ Movies name language] like this.", show_alert=True)
     
     elif query.data == "read_in_ban":
-        await query.answer('• সঠিক বানানে নামটি ইংরেজিতে নাম টি লিখুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না। .', show_alert=True)
+        await query.answer('• সঠিক বানানে ইংরেজিতে নামটি লিখুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না। \n\nনামের পাশে (Movie)(Wabseries) লিখবেন না তাহলে কিন্তু কাষ্খিত ফাইল টি পাবেন না ।\n যেটা প্রয়োজন সেটার নাম সরাসরি লিখুন।\n আর সঠিক বানানটি যদি না না জানেন তাহলে Google থেকে সঠিক বানানটি জেনে নিন 👇.', show_alert=True)
     
     elif query.data == "read_in_tam":
         await query.answer('சரியான எழுத்துப்பிழையில் கேளுங்கள்.\nOTT பிளாட்ஃபார்மில் வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்.\n• இப்படி [படத்தின் பெயர் மொழி] கேட்கலாம்.', show_alert=True)
@@ -2445,15 +2445,15 @@ async def auto_filter(client, msg, spoll=False):
                                                                                                                                         [InlineKeyboardButton("❌Reject Req", callback_data=f"notify_user_req_rejected:{user_id}:{requested_movie}")]
                                                                                                                                         ]))
                 
-                l = await message.reply_text(text=f"△ HeY `{message.from_user.first_name}`🥰,\nI ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ.🤧\n>Tʀʏ ʀᴇᴀᴅɪɴɢ ᴛʜᴇ ɪɴsᴛʀᴜᴄᴛɪᴏɴs ʙᴇʟᴏᴡ 👇",
+                l = await message.reply_text(text=f"△ HeY `{message.from_user.first_name}`🥰,\nI ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ.🤧\n>Tʀʏ ʀᴇᴀᴅɪɴɢ ᴛʜᴇ ɪɴsᴛʀᴜᴄᴛɪᴏɴs ʙᴇʟᴏᴡ. যে ভাষা বুঝেন ওই খানে ক্লিক করুন 👇",
                                                                                                        reply_markup=InlineKeyboardMarkup([
                                                                                                                                         [ InlineKeyboardButton("HIN", callback_data="read_in_hin"),
-                                                                                                                                          InlineKeyboardButton("ENG", callback_data="read_in_eng"),
+                                                                                                                                          InlineKeyboardButton("Urdu", callback_data="read_in_urd"),
                                                                                                                                           InlineKeyboardButton("BAN", callback_data="read_in_ban"),
                                                                                                                                           InlineKeyboardButton("TAM", callback_data="read_in_tam")
                                                                                                                                         ],[
-                                                                                                                                          InlineKeyboardButton("Sanskrit", callback_data="read_in_san"),
-                                                                                                                                          InlineKeyboardButton("Urdu", callback_data="read_in_urd")
+                                                                                                                                          InlineKeyboardButton("BANGLA", callback_data="read_in_ban"),
+                                                                                                                                          InlineKeyboardButton("ENGLISH", callback_data="read_in_eng")
                                                                                                                                         ],
                                                                                                                                         [ InlineKeyboardButton("═• Search name on google​ •═", url=generated_link)],
                                                                                                                                         ]))
