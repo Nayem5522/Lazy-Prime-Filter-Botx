@@ -2449,7 +2449,7 @@ async def auto_filter(client, msg, spoll=False):
                                                                                                        reply_markup=InlineKeyboardMarkup([
                                                                                                                                         [ InlineKeyboardButton("HIN", callback_data="read_in_hin"),
                                                                                                                                           InlineKeyboardButton("Urdu", callback_data="read_in_urd"),
-                                                                                                                                          InlineKeyboardButton("BAN", callback_data="read_in_ban"),
+                                                                                                                                          InlineKeyboardButton("Nol", callback_data="read_in_pb"),
                                                                                                                                           InlineKeyboardButton("TAM", callback_data="read_in_tam")
                                                                                                                                         ],[
                                                                                                                                           InlineKeyboardButton("BANGLA", callback_data="read_in_ban"),
