@@ -2159,8 +2159,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "read_in_eng":
         await query.answer("• Ask in correct spelling.\n• Don't ask for movies which are not released on OTT platforms.\n• Possible ask [ Movies name language] like this.", show_alert=True)
     
-    elif query.data == "read_in_ban":
-        await query.answer('• সঠিক বানানে ইংরেজিতে নামটি লিখুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না। \n\nনামের পাশে (Movie)(Wabseries) লিখবেন না তাহলে কিন্তু কাষ্খিত ফাইল টি পাবেন না ।\n যেটা প্রয়োজন সেটার নাম সরাসরি লিখুন।\n আর সঠিক বানানটি যদি না না জানেন তাহলে Google থেকে সঠিক বানানটি জেনে নিন.', show_alert=True)
+    elif query.data == "read_in_bang":
+        await query.answer('• সঠিক বানানে ইংরেজিতে নামটি লিখুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না। \n\nনামের পাশে [Movie][Wabseries] লিখবেন না তাহলে কিন্তু কাষ্খিত ফাইল টি পাবেন না ।\n যেটা প্রয়োজন সেটার নাম সরাসরি লিখুন।\n আর সঠিক বানানটি যদি না না জানেন তাহলে Google থেকে সঠিক বানানটি জেনে নিন.', show_alert=True)
     
     elif query.data == "read_in_tam":
         await query.answer('சரியான எழுத்துப்பிழையில் கேளுங்கள்.\nOTT பிளாட்ஃபார்மில் வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்.\n• இப்படி [படத்தின் பெயர் மொழி] கேட்கலாம்.', show_alert=True)
@@ -2452,7 +2452,7 @@ async def auto_filter(client, msg, spoll=False):
                                                                                                                                           InlineKeyboardButton("Nol", callback_data="read_in_pb"),
                                                                                                                                           InlineKeyboardButton("TAM", callback_data="read_in_tam")
                                                                                                                                         ],[
-                                                                                                                                          InlineKeyboardButton("BANGLA", callback_data="read_in_ban"),
+                                                                                                                                          InlineKeyboardButton("BANGLA", callback_data="read_in_bang"),
                                                                                                                                           InlineKeyboardButton("ENGLISH", callback_data="read_in_eng")
                                                                                                                                         ],
                                                                                                                                         [ InlineKeyboardButton("═• Search name on google​ •═", url=generated_link)],
