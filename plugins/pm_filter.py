@@ -1973,7 +1973,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"✅ Hey Bro, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"✅ Hey Bro, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n আপনার রিকোয়েস্ট কৃত ফাইলটি আপলোড করে দেওয়া হয়েছে এখন 👇 সঠিক বানানটি লিখুন তাহলে চলে আসবে ফাইলটি 🤗\n❤ Thank You for the contribution", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Upload done ✅.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋", reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -1998,7 +1998,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"🙇‍♀️ Sorry Darling! Your requested content named `{movie}` is rejected by our **ADMiN**, we are really very sorry for the inconvenience, we can't process your request at the moment...\n\n❤️‍🩹Keep your search environment friendly, sweetheart!", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"🙇‍♀️ Sorry Bro! Your requested content named `{movie}` is rejected by our **ADMiN**, we are really very sorry for the inconvenience, we can't process your request at the moment...\n\n❤️‍🩹Keep your search environment friendly, sweetheart!", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Rejected ❌.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -2023,7 +2023,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 Please make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 \n আপনার লিখিত বানানের সমস্যা হয়েছে তাই ফাইলটি হয়তো আসেনি‌ । বানানটি সঠিক করে লিখুন। আর যদি না জানেন সঠিক নামটি তাহলে Google থেকে সঠিক নামটি জেনে নিন ।\n তারপর সঠিক নামটি দিয়ে আবার রিকোয়েস্ট করুন রিকোয়েস্ট করুন 👇 \n Please make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -2048,7 +2048,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 Please make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 \n আপনার লিখিত বানানের সমস্যা হয়েছে তাই ফাইলটি হয়তো আসেনি‌ । বানানটি সঠিক করে লিখুন। আর যদি না জানেন সঠিক নামটি তাহলে Google থেকে সঠিক নামটি জেনে নিন ।\n তারপর সঠিক নামটি দিয়ে আবার রিকোয়েস্ট করুন রিকোয়েস্ট করুন 👇 \nPlease make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
