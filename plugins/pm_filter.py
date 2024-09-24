@@ -2160,7 +2160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("• Ask in correct spelling.\n• Don't ask for movies which are not released on OTT platforms.\n• Possible ask [ Movies name language] like this.", show_alert=True)
     
     elif query.data == "read_in_ban":
-        await query.answer('• সঠিক বানানে জিজ্ঞাসা করুন।\n• OTT প্ল্যাটফর্মে মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য জিজ্ঞাসা করবেন না।.', show_alert=True)
+        await query.answer('• সঠিক বানানে রিকোয়েস্ট করুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য জিজ্ঞাসা করবেন না।. শুধু নামটি ইংরেজিতে একদম আর কিছু লিখতে হবে না', show_alert=True)
     
     elif query.data == "read_in_tam":
         await query.answer('சரியான எழுத்துப்பிழையில் கேளுங்கள்.\nOTT பிளாட்ஃபார்மில் வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்.\n• இப்படி [படத்தின் பெயர் மொழி] கேட்கலாம்.', show_alert=True)
