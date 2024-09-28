@@ -388,7 +388,7 @@ async def start(client, message):
 )
 
 # 600 সেকেন্ড (10 মিনিট) জন্য স্লিপ করানো হচ্ছে
-await asyncio.sleep(600)
+            await asyncio.sleep(600)
 
 
             await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
