@@ -271,10 +271,10 @@ async def start(client, message):
                             InlineKeyboardButton('📁 DAWNLOAD NOW 📁', url=ghost_url)
                         ],
 		        [
-                            InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url="https://t.me/Prime_Movie_Watch_Dawnload/76")
+                            InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url=await get_tutorial(chat_id))
 	         	],
                         [
-                            InlineKeyboardButton('🎉 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ 🎊', callback_data="seeplans")
+                            InlineKeyboardButton('⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐', callback_data="seeplans")
                         ]
                     ]
                 )
@@ -299,9 +299,9 @@ async def start(client, message):
                 [[
                     InlineKeyboardButton('📁 DAWNLOAD NOW 📁', url=ghost)
 		],[
-                    InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url="https://t.me/Prime_Movie_Watch_Dawnload/76")
+                    InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url=await get_tutorial(chat_id))
 		],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
+                    InlineKeyboardButton('⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐', callback_data="seeplans")
                 ]]
             )
         )
@@ -378,10 +378,10 @@ async def start(client, message):
                 InlineKeyboardButton('📁 DAWNLOAD NOW 📁', url=generatedurl)
             ],
             [
-                InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url="https://t.me/Prime_Movie_Watch_Dawnload/76")
+                InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url=await get_tutorial(chat_id))
             ],
             [
-                InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
+                InlineKeyboardButton('⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐', callback_data="seeplans")
             ]
         ]
     )
