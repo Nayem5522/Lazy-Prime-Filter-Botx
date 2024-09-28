@@ -363,19 +363,34 @@ async def start(client, message):
             files_ = await get_file_details(file_id)
             files = files_[0]
             generatedurl = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
-            k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n🎁 ꜰɪʟᴇ ɴᴀᴍᴇ : <code>{files.file_name}</code> \n\n⚕ ꜰɪʟᴇ ꜱɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n", reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton('📁 DAWNLOAD NOW 📁', url=generatedurl)
-                        ],[
-                            InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url="https://t.me/Prime_Movie_Watch_Dawnload/76")
-		        ],[
-                            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
-                        ]]
-                    ]
-                )
-            )
-            await asyncio.sleep(600)
+
+k = await client.send_message(
+    chat_id=message.from_user.id,
+    text=(
+        f"🫂 ʜᴇʏ {message.from_user.mention}\n\n"
+        f"✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n"
+        f"🎁 ꜰɪʟᴇ ɴᴀᴍᴇ : <code>{files.file_name}</code>\n\n"
+        f"⚕ ꜰɪʟᴇ ꜱɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n"
+    ),
+    reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton('📁 DAWNLOAD NOW 📁', url=generatedurl)
+            ],
+            [
+                InlineKeyboardButton('⁉️ HOW TO DOWNLOAD ⁉️', url="https://t.me/Prime_Movie_Watch_Dawnload/76")
+            ],
+            [
+                InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
+            ]
+        ]
+    )
+)
+
+# 600 সেকেন্ড (10 মিনিট) জন্য স্লিপ করানো হচ্ছে
+await asyncio.sleep(600)
+
+
             await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
             return
     files_ = await get_file_details(file_id)           
