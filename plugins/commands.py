@@ -85,7 +85,7 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL), creates_join_request=True)
         except ChatAdminRequired:
-            logger.error("Hey Sona, Ek dfa check kr lo ki main Channel mei Add hu ya nhi...!")
+            logger.error("Hey BRO, Please Click to Join Update Channel And Than Join that channel And come back And Click to Try Again \n\n প্রথমে Join Update Channel এ ক্লিক করুন তারপর একটা চ্যানেল আসবে সেখানে জয়েন হবেন এবং তারপর ব্যাক এসে Try Again বাটনে ক্লিক করবেন তাহলে কাঙ্খিত লিংকটি পেয়ে যাবেন...!")
             return
         btn = [
             [
