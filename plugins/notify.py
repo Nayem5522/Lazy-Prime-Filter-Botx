@@ -101,4 +101,4 @@
 #         await client.send_message(int(user_id), f"Your requested movie {movie} is now available in our database!")
 #         # Delete callback query message
 #         await callback_query.answer()
-#         await callback_query.delete()
+#         await callback_query.message.delete()
