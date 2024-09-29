@@ -409,7 +409,7 @@ async def next_page(bot, query):
         ])
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://t.me/Prime_Movie_Watch_Dawnload/71'),
+	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=await get_tutorial(chat_id)),
         ] 
     )
     if 0 < offset <= 10:
@@ -729,7 +729,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ])
         btn.insert(0,
             [ 
-            InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://t.me/Prime_Movie_Watch_Dawnload/71'),
+            InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=await get_tutorial(chat_id)),
             ] 
         )
 
@@ -1042,7 +1042,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
         btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://t.me/Prime_Movie_Watch_Dawnload/71'),
+	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=await get_tutorial(chat_id)),
         ] 
     )
 
@@ -1327,7 +1327,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
         btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://t.me/Prime_Movie_Watch_Dawnload/71'),
+	    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=await get_tutorial(chat_id)),
         ])
 
         if offset != "":
@@ -2160,7 +2160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("• Ask in correct spelling.\n• Don't ask for movies which are not released on OTT platforms.\n• Possible ask [ Movies name language] like this.", show_alert=True)
     
     elif query.data == "read_in_ban":
-        await query.answer('• সঠিক বানানে রিকোয়েস্ট করুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য জিজ্ঞাসা করবেন না।. শুধু নামটি ইংরেজিতে একদম আর কিছু লিখতে হবে না', show_alert=True)
+        await query.answer('• সঠিক বানানে রিকোয়েস্ট করুন।\n• রিলিজ - মুক্তিপ্রাপ্ত নয় এমন সিনেমার জন্য রিকোয়েস্ট করবেন না।. শুধু নামটি ইংরেজিতে লিখতে হবে\n অন্য কিছু লিখলে কিন্তু আসবে না, আপনার কাঙ্খিত লিংক\n ধন্যবাদ', show_alert=True)
     
     elif query.data == "read_in_tam":
         await query.answer('சரியான எழுத்துப்பிழையில் கேளுங்கள்.\nOTT பிளாட்ஃபார்மில் வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்.\n• இப்படி [படத்தின் பெயர் மொழி] கேட்கலாம்.', show_alert=True)
@@ -2642,7 +2642,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
     btn.insert(0,
     [ 
-    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url='https://t.me/Prime_Movie_Watch_Dawnload/71'),
+    InlineKeyboardButton(text="⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡", url=await get_tutorial(chat_id)),
     ])
 
     if offset != "":
@@ -2797,7 +2797,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply(f"Hey sona, did you checked your spelling properly, here are some suggestions for you, please check if your requested content match anyone of these following suggestions...\n\n                 **or**\n\nDiscuss issue with admin here 👉 <a href='https://t.me/Prime_Admin_Support_ProBot'>{ADMIN_SuPPORT}</a> ♥️ ",
+    await msg.reply(f"Hey sona, did you checked your spelling properly, আপনার লিখিত বানানটা ঠিক আছে কিনা দেখছেন কি । here are some suggestions for you, please check if your requested content match anyone of these following suggestions...\n\n                 **or**\n\nDiscuss issue with admin here 👉 <a href='https://t.me/Prime_Admin_Support_ProBot'>{ADMIN_SuPPORT}</a> ♥️ ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
