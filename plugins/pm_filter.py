@@ -1627,7 +1627,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Mere saamne jyada smart nhi banne ka sona 😒", show_alert=True)
+            await query.answer("Mere saamne jyada smart nhi banne ka sona 😒\n ওভার স্মার্ট হওয়ার চেষ্টা করবেন না প্রথমে Join Update Channel এ ক্লিক করে ওখানে জয়েন হন তারপর এটাই ক্লিক করেন 😉", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
