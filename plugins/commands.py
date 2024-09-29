@@ -109,7 +109,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Hey BRO, Please Click to Join Update Channel And Than Join that channel And come back And Click to Try Again \n\n প্রথমে Join Update Channel এ ক্লিক করুন তারপর একটা চ্যানেল আসবে সেখানে জয়েন হবেন এবং তারপর ব্যাক এসে Try Again বাটনে ক্লিক করবেন তাহলে কাঙ্খিত লিংকটি পেয়ে যাবেন**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
