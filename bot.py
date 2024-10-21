@@ -8,7 +8,7 @@ import logging.config
 # for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
 # rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
 # Get logging configurations
-logging.config.fileConfig('logging.conf')
+logging.config.fileConfig('logging.conf.text')  # এখানে .text যোগ করা হয়েছে
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
@@ -73,7 +73,7 @@ async def Lazy_start():
     logging.info(LOG_STR)
     await idle()
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     try:
         loop.run_until_complete(Lazy_start())
         logging.info('-----------------------🧐 Service running in Lazy Mode 😴-----------------------')
