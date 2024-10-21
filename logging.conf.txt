@@ -5,7 +5,7 @@ keys=root
 keys=consoleHandler,fileHandler
 
 [formatters]
-keys=consoleFormatter,fileFormatter,simpleFormatter
+keys=consoleFormatter,fileFormatter
 
 [logger_root]
 level=DEBUG
@@ -21,7 +21,7 @@ args=(sys.stdout,)
 class=FileHandler
 level=ERROR
 formatter=fileFormatter
-args=('TelegramBot.log', 'w',)
+args=('TelegramBot.log','w',)
 
 [formatter_consoleFormatter]
 format=%(asctime)s - %(lineno)d - %(name)s - %(module)s - %(levelname)s - %(message)s
@@ -30,6 +30,3 @@ datefmt=%I:%M:%S %p
 [formatter_fileFormatter]
 format=[%(asctime)s:%(name)s:%(lineno)d:%(levelname)s] %(message)s
 datefmt=%m/%d/%Y %I:%M:%S %p
-
-[formatter_simpleFormatter]
-format=%(asctime)s - %(name)s - %(levelname)s - %(message)s
